@@ -1,16 +1,20 @@
-# This is a sample Python script.
+from random import randint
+count=0
+a=0
+b=0
+a = int(input("enter the start of range of number:"))
+b = int(input("enter the end of range of number:"))
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+randint(a,b)
+for i in range(a,b):
+    i = input("Enter any number in the range: ")
+    if i!=randint(a,b):
+        print("you choosed wrong. Try again!")
+        count=count+1
+        if count == 3:
+            break
+    else:
+        print("you won")
+print("better luck next time")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
